@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filosofia Politica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="introduccion.html">Introducción a Aristóteles</a></li>
+              <li><a href="obras.html">Las Obras de Aristóteles</a></li>
+              <li><a href="filosofia.html">Filosofía Ética</a></li>
+              <li><a href="politica.html">Filosofía Política</a></li>
+              <li><a href="legado.html">Legado e Influencia</a></li>
+            </ul>
+        </nav>
+        <img src="img/logo.png" alt="Logo de la página" class="logo">
+    </header>
+
+    <div class="politica">
+    <main>
+        <section>
+            <h1>Introducción</h1>
+            <p>La filosofía política de Aristóteles representa uno de los pilares fundamentales del pensamiento político occidental. Para Aristóteles, el ser humano es un "animal político" por naturaleza, lo que significa que solo puede alcanzar su plenitud viviendo en comunidad. En su obra Política, analiza las diferentes formas de organización del poder, la función del Estado y la importancia de la ley, la virtud y la justicia. A diferencia de su maestro Platón, Aristóteles desarrolla una visión más empírica y práctica de la política, basada en la observación de distintas constituciones reales. Su propuesta defiende que el fin último de la política es el bien común, y que la mejor forma de gobierno es aquella que permite a los ciudadanos desarrollar sus capacidades éticas e intelectuales dentro de una vida en comunidad.</p>
+        </section>
+        <section>
+            <section class="polis">
+        <img src="img/polis.jpg" alt="polis" class="polis">
+      </section>
+            <h1>La Polis</h1>
+            <p>La polis, o ciudad-estado, es el núcleo de la filosofía política de Aristóteles. Según él, la polis no solo es una estructura política, sino la forma natural y más elevada de organización social. Aristóteles sostiene que los seres humanos tienden a asociarse primero en familias, luego en aldeas, y finalmente en polis, como culminación de su desarrollo social. En la polis, los ciudadanos pueden alcanzar su pleno potencial ético e intelectual, ya que esta proporciona el entorno necesario para vivir de acuerdo con la virtud. Para Aristóteles, el propósito de la polis no es solo sobrevivir, sino vivir bien —es decir, una vida orientada al bien común, la justicia y la realización personal dentro de una comunidad política organizada.</p>
+        </section>
+        <section>
+            <section class="justicia">
+        <img src="img/justicia.jfif" alt="justicia" class="justicia">
+      </section>
+            <h1>La Justicia y el Bien Común</h1>
+            <p>Para Aristóteles, <strong>la justicia</strong> es el principio fundamental que sostiene el orden político y social. No se trata solo de cumplir leyes, sino de dar a cada uno lo que le corresponde, en función de su mérito y su papel dentro de la comunidad. Distingue entre justicia distributiva (reparto equitativo de bienes y honores) y justicia correctiva (reparación de daños entre individuos). Ambas formas son esenciales para mantener el equilibrio en la polis.</p>
+       
+            <p><strong>El bien común</strong> es el objetivo último de la política. A diferencia de los regímenes que buscan el beneficio de unos pocos, el gobierno justo es aquel que se orienta al bienestar de todos los ciudadanos. Aristóteles insiste en que la política no debe centrarse en el poder o la riqueza, sino en crear las condiciones necesarias para que los ciudadanos vivan una vida buena y virtuosa en comunidad.</p>
+        </section>
+        <section>
+            <h1>Clasificación de los Gobiernos</h1>
+            <p>Aristóteles clasifica los gobiernos según dos criterios principales: cuántos gobiernan y a favor de quién gobiernan. Así, distingue entre formas de gobierno justas (cuando buscan el bien común) y corruptas (cuando buscan el interés personal de quienes detentan el poder).</p>
+            <p><strong>Formas Justas:</strong></p>
+            <ul>
+            <li>Monarquía – Gobierno de uno solo, orientado al bien común.</li>
+            <li>Aristocracia – Gobierno de unos pocos sabios y virtuosos.</li>
+            <li>Politeia (República o Gobierno Constitucional) – Gobierno de muchos, basado en leyes y en el interés colectivo.</li>
+        </ul>
+        <p><strong>Formas Corruptas:</strong></p>
+        <ul>
+            <li>Tiranía – Desviación de la monarquía; el gobernante busca su propio beneficio.</li>
+            <li>Oligarquía – Desviación de la aristocracia; gobiernan los ricos en su propio interés.</li>
+            <li>Democracia (en sentido negativo para Aristóteles) – Desviación de la politeia; el poder está en manos de la mayoría pobre que actúa por interés propio, no por el bien común.</li>
+        </ul>
+        <br>
+        <h2>A continuación se presenta un formulario para saber qué es de tu agrado e interés</h2>
+        </section>
+    </main>
+
+    
+    <form action="procesa.php" method="post">
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" name="nombre" required></td>
+                <td>Contraseña:</td>
+                <td><input type="password" name="contrasena" required></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    Opinión sobre la política en Aristóteles:<br>
+                    <textarea name="opinion" rows="6" cols="80" placeholder="Escribe tu opinión aquí..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Temas de interés:<br>
+                    <input type="checkbox" name="tema[]" value="ética"> Ética<br>
+                    <input type="checkbox" name="tema[]" value="justicia"> Justicia<br>
+                    <input type="checkbox" name="tema[]" value="democracia"> Democracia
+                </td>
+                <td colspan="2">
+                    Nivel de acuerdo:<br>
+                    <input type="radio" name="acuerdo" value="alto"> Alto<br>
+                    <input type="radio" name="acuerdo" value="medio"> Medio<br>
+                    <input type="radio" name="acuerdo" value="bajo"> Bajo
+                </td>
+            </tr>
+            <tr>
+                <td>Obra favorita:</td>
+                <td>
+                    <select name="obra">
+                        <option value="etica">Ética a Nicómaco</option>
+                        <option value="politica">Política</option>
+                        <option value="retorica">Retórica</option>
+                    </select>
+                </td>
+                <td>Temas relacionados:</td>
+                <td>
+                    <select name="temas[]" multiple>
+                        <option value="virtud">Virtud</option>
+                        <option value="estado">Estado</option>
+                        <option value="ley">Ley</option>
+                        <option value="ciudadania">Ciudadanía</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <div class="botones">
+            <input type="reset" value="Reiniciar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</div>
+    <footer>
+    <p>&copy; Emily Cruz (emily.cruz@tecnico-honduras.com) 12-11</p>
+  </footer> 
+</body>
+</html>
